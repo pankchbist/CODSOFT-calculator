@@ -1,0 +1,80 @@
+/* Full Screen Background */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+
+    /* New modern gradient background */
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* Calculator Box (Size Maintained) */
+.calculator {
+    width: 340px;          /* SAME WIDTH */
+    padding: 25px;         /* SAME PADDING */
+    border-radius: 20px;
+
+    /* New background color */
+    background: #1f2937;
+
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+
+/* Display */
+#display {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+
+    background: #111827;
+    color: #ffffff;
+}
+
+/* Buttons */
+button {
+    height: 65px;          /* SAME HEIGHT */
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+
+    background: #374151;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #4b5563;
+}
+
+/* Operator buttons */
+.operator {
+    background: #f59e0b;
+}
+
+.operator:hover {
+    background: #d97706;
+}
+
+/* Equal button */
+.equal {
+    background: #22c55e;
+}
+
+.equal:hover {
+    background: #16a34a;
+}
+
+/* Zero button */
+.zero {
+    grid-column: span 2;
+}
